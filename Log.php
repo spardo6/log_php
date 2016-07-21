@@ -16,6 +16,8 @@ class Log {
 	 * @return Void
 	 */
 	public static function preprint ( $log , $exit=false ) {
+		// Separador
+		echo '<br>+ ==================================================<br>' ;
 		// Mostrar saltos de linea en HTML
 		echo '<pre>' ;
 		
@@ -23,6 +25,7 @@ class Log {
 		print_r( $log ) ;
 
 		echo '</pre>' ;
+		echo '<br>================================================== +<br>' ;
 
 		// Si se detiene la ejecución del script
 		if ( $exit ) {
